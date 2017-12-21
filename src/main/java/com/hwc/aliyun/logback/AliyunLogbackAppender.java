@@ -63,7 +63,6 @@ public class AliyunLogbackAppender extends AppenderBase<LoggingEvent> {
         item.PushBack("level", event.getLevel().toString());
         item.PushBack("thread", event.getThreadName());
         item.PushBack("logger", event.getLoggerName());
-        //item.PushBack("location", event.getLocationInformation().fullInfo.toString());
 
         String message = event.getFormattedMessage();
         // 如果异常不为空
@@ -186,6 +185,14 @@ public class AliyunLogbackAppender extends AppenderBase<LoggingEvent> {
 
     public void setTopic(String topic) {
         this.topic = topic;
+    }
+
+    public String getTimeFormat() {
+        return timeFormat;
+    }
+
+    public void setTimeFormat(String timeFormat) {
+        this.timeFormat = timeFormat;
     }
 
     public String getTimeZone() {
