@@ -9,7 +9,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <logback.version>1.1.11</logback.version>
+        <logback.version>1.2.0</logback.version>
         <aliyun.log.version>0.1.4</aliyun.log.version>
     </properties>
 
